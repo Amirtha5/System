@@ -100,46 +100,67 @@ class College {
             col.put(7108, "PSG");
             col.put(7106, "CIT");
             System.out.println("college:" + col);
-
-
             System.out.print("Enter the college(1(7218-Rathinam),2(7180-PSG),3(7106-CIT)):");
             int college = input.nextInt();
             System.out.print("Enter student's branch  (1-CSE, 2-IT, 3-Mech):");
             int branch = input.nextInt();
-            System.out.println("Counseling Report");
-            System.out.println("-----------------");
-            System.out.println("college:" + college);
-            System.out.println("branch:" + branch);
-            System.out.println("roll number: ");
-            int rollNumber = input.nextInt();
-            System.out.println("-----------------");
-            System.out.println(rollNumber);
 
-            switch (branch) {
-                case 1:
-                    System.out.println("Branch Alloted: CSE");
-                    break;
-                case 2:
-                    System.out.println("Branch Alloted: IT");
-                    break;
-                case 3:
-                    System.out.println("Branch Alloted: Mech");
-            }
-            switch (college) {
-                case 1:
-                    System.out.println("College Alloted:" + 7218);
-                    break;
-                case 2:
-                    System.out.println("College Alloted:" + 7108);
-                    break;
-                case 3:
-                    System.out.println("College Alloted:" + 7106);
-            }
+                System.out.println("Counseling Report");
+                System.out.println("-----------------");
+                System.out.println("college:" + college);
+                System.out.println("branch:" + branch);
+                System.out.println("roll number: ");
+                int rollNumber = input.nextInt();
+                System.out.println("-----------------");
+                System.out.println(rollNumber);
 
-           
+                switch (branch) {
+                    case 1:
+                        System.out.println("Branch Alloted: CSE");
+                        break;
+                    case 2:
+                        System.out.println("Branch Alloted: IT");
+                        break;
+                    case 3:
+                        System.out.println("Branch Alloted: Mech");
+                }
+                switch (college) {
+                    case 1:
+                        System.out.println("College Alloted:" + 7218);
+                        break;
+                    case 2:
+                        System.out.println("College Alloted:" + 7108);
+                        break;
+                    case 3:
+                        System.out.println("College Alloted:" + 7106);
+                    }
+            i = 1;
+            while (i != 0) {
+                System.out.println("Continue to add more collage ?");
+                System.out.println("Enter 1 to Add \nEnter 2 to Exit");
+                String ch = input.next();
+                if (ch.equals("2")) {
+                    i = 0;
+                }
+                System.out.println("Enter the College Name : ");
+                String name = input.next();
+                System.out.println("Enter the Department1 : ");
+                String dept1 = input.next();
+                System.out.println("Enter the Department2 : ");
+                String dept2 = input.next();
+                System.out.println("Enter the Department3 : ");
+                String dept3 = input.next();
+                System.out.println("College and Department Added Successfully !!");
+
+            }
+                }
+
             }
         }
-    }
+
+
+
+
 
 
 
