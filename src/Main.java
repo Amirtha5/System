@@ -6,15 +6,15 @@ import java.util.HashMap;
 class Student {
     private String name;
     private int cutOffMarks;
-    String branch;
+    private int rollNumber;
     private String getName() {
         return name;
     }
     private int getcutOffMarks() {
         return cutOffMarks;
     }
-    public String getBranch() {
-        return branch;
+    public int getrollNumber() {
+        return rollNumber;
     }
 
     public void printStudent(){
@@ -73,22 +73,17 @@ class Student {
 }
 class College {
     String name;
-    int filledSeats;
-    boolean vacantSeats;
+    String branch;
+   
 
     public String getName() {
         return name;
     }
 
-    public void fillSeat() {
-        filledSeats++;
+    public void branch() {
+        return branch;
     }
-
-    public boolean VacantSeats() {
-        return vacantSeats;
-    }
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Student classObj = new Student();
         classObj.printStudent();
         Scanner input = new Scanner(System.in);
