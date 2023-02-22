@@ -134,14 +134,11 @@ class College {
                     case 3:
                         System.out.println("College Alloted:" + 7106);
                     }
-            i = 1;
-            while (i != 0) {
-                System.out.println("Continue to add more collage ?");
-                System.out.println("Enter 1 to Add \nEnter 2 to Exit");
-                String ch = input.next();
-                if (ch.equals("2")) {
-                    i = 0;
-                }
+            System.out.println("you want to add colleges please click");
+        System.out.println("Enter 1 to Add \nEnter 2 to Exit");
+        String ch = input.next();
+        for (i = 1; i < n; i++) {
+            if (1==0) {
                 System.out.println("Enter the College Name : ");
                 String name = input.next();
                 System.out.println("Enter the Department1 : ");
@@ -150,9 +147,24 @@ class College {
                 String dept2 = input.next();
                 System.out.println("Enter the Department3 : ");
                 String dept3 = input.next();
+                System.out.print("Enter student's branch  (1-CSE, 2-IT, 3-Mech):");
+                int branchs = input.nextInt();
                 System.out.println("College and Department Added Successfully !!");
-
-            }
+                switch (branchs) {
+                    case 1:
+                        System.out.println("Branch Alloted: CSE");
+                        break;
+                    case 2:
+                        System.out.println("Branch Alloted: IT");
+                        break;
+                    case 3:
+                        System.out.println("Branch Alloted: Mech");
+                }
+                }
+            else{
+                    System.out.println("No colleges found");
+                }
+            
                 }
 
             }
